@@ -15,7 +15,7 @@ mod quanductor {
 
     #[instruction(discriminator = 0)]
     pub fn initialize(ctx: Ctx<Initialize>) -> Result<(), ProgramError> {
-        ctx.accounts.initialize()
+        ctx.accounts.handler(&ctx.bumps)
     }
 }
 
