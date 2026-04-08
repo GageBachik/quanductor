@@ -3,9 +3,10 @@ use quasar_lang::prelude::*;
 use crate::state::SCORE_RANGE;
 
 // --- Program ID ---
+// HistoryJTGbKQD2mRgLZ3XhqHnN811Qpez8X9kCcGHoa
 pub const VH_PROGRAM_ID: Address = Address::new_from_array([
-    10u8, 104, 54, 139, 64, 220, 152, 230, 42, 118, 133, 68, 52, 148, 8, 112, 165, 22, 151, 224,
-    122, 222, 151, 168, 167, 178, 12, 40, 14, 104, 120, 171,
+    248u8, 117, 89, 98, 214, 59, 7, 171, 71, 19, 73, 145, 33, 110, 50, 221,
+    143, 183, 121, 232, 10, 6, 93, 249, 125, 111, 126, 136, 142, 31, 12, 245,
 ]);
 
 // --- Discriminator ---
