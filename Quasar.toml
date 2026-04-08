@@ -1,0 +1,8 @@
+[project]
+name = "quanductor"
+
+[toolchain]
+type = "solana"
+
+[testing]
+framework = "quasarsvm-rust"
