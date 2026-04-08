@@ -6,6 +6,8 @@ mod errors;
 mod instructions;
 mod state;
 mod validator_history;
+mod stake_cpi;
+mod stake_state;
 use instructions::*;
 
 declare_id!("4qoALqJXrrjcqTmetedH55rvHTeF4XPfFVo8GaztD6KR");
