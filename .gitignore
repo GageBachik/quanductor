@@ -15,3 +15,8 @@ node_modules
 
 # OS
 .DS_Store
+
+# LLM
+.agents
+.claude
+skills-lock.json
