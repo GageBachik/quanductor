@@ -25,6 +25,21 @@ mod quanductor {
     pub fn crank_scores(ctx: CtxWithRemaining<CrankScores>) -> Result<(), ProgramError> {
         ctx.accounts.handler(ctx.remaining_accounts())
     }
+
+    #[instruction(discriminator = 2)]
+    pub fn compute_threshold(ctx: Ctx<ComputeThreshold>) -> Result<(), ProgramError> {
+        ctx.accounts.handler()
+    }
+
+    #[instruction(discriminator = 3)]
+    pub fn delegate_stake(ctx: Ctx<DelegateStake>) -> Result<(), ProgramError> {
+        ctx.accounts.handler()
+    }
+
+    #[instruction(discriminator = 4)]
+    pub fn undelegate_stake(ctx: Ctx<UndelegateStake>) -> Result<(), ProgramError> {
+        ctx.accounts.handler()
+    }
 }
 
 #[cfg(test)]
