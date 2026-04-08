@@ -20,6 +20,11 @@ mod quanductor {
     pub fn initialize(ctx: Ctx<Initialize>) -> Result<(), ProgramError> {
         ctx.accounts.handler(&ctx.bumps)
     }
+
+    #[instruction(discriminator = 1)]
+    pub fn crank_scores(ctx: CtxWithRemaining<CrankScores>) -> Result<(), ProgramError> {
+        ctx.accounts.handler(ctx.remaining_accounts())
+    }
 }
 
 #[cfg(test)]
