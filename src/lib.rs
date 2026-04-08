@@ -5,6 +5,7 @@ use quasar_lang::prelude::*;
 mod errors;
 mod instructions;
 mod state;
+mod validator_history;
 use instructions::*;
 
 declare_id!("4qoALqJXrrjcqTmetedH55rvHTeF4XPfFVo8GaztD6KR");
