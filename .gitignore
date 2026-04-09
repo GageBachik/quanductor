@@ -1,10 +1,12 @@
 # Build artifacts
 /target
+.surfpool
 
 # Lock files
 Cargo.lock
 package-lock.json
 yarn.lock
+skills-lock.json
 
 # Dependencies
 node_modules
@@ -19,4 +21,3 @@ node_modules
 # LLM
 .agents
 .claude
-skills-lock.json

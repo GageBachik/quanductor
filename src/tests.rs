@@ -467,13 +467,13 @@ fn test_compute_threshold_insufficient_validators() {
     let mut svm = setup();
     let (scoring_state, bump) = scoring_state_pda();
 
-    // Create a CRANKING state with only 100 validators scored (need 1400)
+    // Create a CRANKING state with only 50 validators scored (need 100)
     let total_size = 1 + 1 + 8 + 8 + 2 + 1024 + 768 + 1 + 1;
     let mut data = vec![0u8; total_size];
     data[0] = 1; // discriminator
     data[1] = 1; // CRANKING
     data[2..10].copy_from_slice(&100u64.to_le_bytes()); // epoch
-    data[18..20].copy_from_slice(&100u16.to_le_bytes()); // total_scored = 100
+    data[18..20].copy_from_slice(&50u16.to_le_bytes()); // total_scored = 50
     data[1813] = bump;
 
     let state_account = Account {
