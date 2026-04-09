@@ -8,7 +8,7 @@ pub const HISTOGRAM_BUCKETS: usize = 512;
 pub const HISTOGRAM_BYTES: usize = HISTOGRAM_BUCKETS * 2; // 1024 bytes (512 x u16)
 pub const BITMAP_BYTES: usize = 768;
 pub const SCORE_RANGE: u64 = 420_001;
-pub const MIN_VALIDATORS: u16 = 1_400;
+pub const MIN_VALIDATORS: u16 = 100;
 pub const EPOCHS_LOOKBACK: usize = 5;
 
 #[account(discriminator = 1)]

@@ -1,0 +1,15 @@
+{
+  "name": "quanductor-e2e",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "tsx e2e-full-flow.ts"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

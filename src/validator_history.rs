@@ -44,7 +44,7 @@ pub const EPOCH_UNSET: u16 = u16::MAX;
 pub const COMMISSION_UNSET: u8 = u8::MAX;
 
 // --- Minimum data length ---
-pub const VH_MIN_DATA_LEN: usize = 65_864;
+pub const VH_MIN_DATA_LEN: usize = 65_856;
 
 /// Validate that the account data belongs to ValidatorHistory.
 /// Checks: owner matches expected program, discriminator matches, data length sufficient.

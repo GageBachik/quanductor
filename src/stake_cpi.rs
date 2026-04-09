@@ -2,7 +2,7 @@
 
 use quasar_lang::{
     cpi::{CpiCall, InstructionAccount, Seed},
-    prelude::{AccountView, Address, ProgramError},
+    prelude::{AccountView, Address, Id, ProgramError},
 };
 
 /// Native Stake program ID: `Stake11111111111111111111111111111111111111`
@@ -10,6 +10,13 @@ pub const STAKE_PROGRAM_ID: Address = Address::new_from_array([
     6, 161, 216, 23, 145, 55, 84, 42, 152, 52, 55, 189, 254, 42, 122, 178,
     85, 127, 83, 92, 138, 120, 114, 43, 104, 164, 157, 192, 0, 0, 0, 0,
 ]);
+
+/// Type marker for the native Stake program, used with `Program<StakeProgram>`.
+pub struct StakeProgram;
+
+impl Id for StakeProgram {
+    const ID: Address = STAKE_PROGRAM_ID;
+}
 
 /// Issue a `DelegateStake` CPI to the native Stake program.
 ///

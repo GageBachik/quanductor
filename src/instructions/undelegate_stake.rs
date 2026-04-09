@@ -3,7 +3,7 @@ use quasar_lang::{cpi::Seed, sysvars::Sysvar as _};
 
 use crate::{
     errors::QuanductorError,
-    stake_cpi,
+    stake_cpi::{self, StakeProgram},
     stake_state,
     state::{ScoringState, EPOCHS_LOOKBACK, PHASE_THRESHOLD_COMPUTED},
     validator_history::{self, VH_PROGRAM_ID},
@@ -18,7 +18,7 @@ pub struct UndelegateStake<'info> {
     pub validator_history: &'info UncheckedAccount,
     pub clock_sysvar: &'info UncheckedAccount,
     pub stake_authority: &'info UncheckedAccount,
-    pub stake_program: &'info UncheckedAccount,
+    pub stake_program: &'info Program<StakeProgram>,
 }
 
 impl<'info> UndelegateStake<'info> {

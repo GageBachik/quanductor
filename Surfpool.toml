@@ -1,0 +1,6 @@
+[network]
+rpc_url = "https://api.mainnet-beta.solana.com"
+
+[airdrop]
+addresses = ["GKPoVMxhDTi3SGxK8wRgguwfXjV8EmNkpqCfeQWyhniT"]
+amount = 100000000000
